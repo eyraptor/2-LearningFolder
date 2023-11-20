@@ -1,0 +1,95 @@
+body {
+  box-sizing: border-box;
+}
+
+/* Create a grid container with two rows and four columns */
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+
+  grid-template-areas:
+    "grid-a grid-a grid-b grid-c"
+    "grid-d grid-e grid-e grid-c";
+}
+
+/* Style the paragraphs */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Using Grid-Map */
+.grid-a {
+  grid-area:grid-a;
+}
+
+.grid-b {
+  grid-area:grid-b;
+}
+
+.grid-c {
+  grid-area: grid-c;
+}
+
+.grid-d {
+  grid-area: grid-d;
+}
+
+.grid-e {
+  grid-area: grid-e;
+}
+
+/* Assigning the cells individually using grid-column and grid-row */
+
+/* 
+.grid-item {
+  padding: 5px;
+  padding-top: 0px;
+}
+
+.grid-a {
+  grid-column: 1 / span 2;
+}
+
+.grid-b {
+  grid-column: 3;
+}
+
+.grid-c {
+  grid-column: 4;
+  grid-row: 1/ span 2;
+}
+
+.grid-d {
+  grid-column: 1;
+}
+
+.grid-e {
+  grid-column: 2 / span 2;
+} */
+
+/* Use a media query to make the grid items stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  /* Need these if using grid-column and grid-row */
+  /* 
+  .grid-item {
+    grid-column: unset;
+  }
+
+  .grid-c {
+    grid-row: 3;
+  } */
+}
