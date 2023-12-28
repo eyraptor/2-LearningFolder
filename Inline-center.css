@@ -1,4 +1,5 @@
 .align {
+  line-height: 100vh;
   verticle-align: middle;
   margin-inline: auto;
   height: 250px;
