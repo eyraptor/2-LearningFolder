@@ -1,6 +1,6 @@
 .align {
   display: inline-block;
-  line-height: 250px;
+  line-height: 100vh;
   verticle-align: middle;
   text-align: center;
   height: 250px;
