@@ -3,10 +3,10 @@
   display: grid;
   place-items: center;
   text-align: center;
-  height: calc(100vh + 1);
+  height: calc(100vh - 1);
   width: calc(100vw - 1);
   border: solid 1px green;
-  color: blue;
+  color: green;
   scroll:none;
 }
 h1 {
