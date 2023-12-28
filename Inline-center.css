@@ -2,4 +2,6 @@
   verticle-align: middle;
   margin-inline: auto;
   height: 250px;
+  border: solid 1px green;
+  color: red;
 }
