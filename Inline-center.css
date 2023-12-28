@@ -1,8 +1,7 @@
 .align {
   box-sizing: border-box;
-  display: inline-block;
-  line-height: 200px;
-  verticle-align: middle;
+  display: grid;
+  place-items: center;
   text-align: center;
   height: 200px;
   width: 100vw;
