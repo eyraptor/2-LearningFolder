@@ -1,3 +1,5 @@
 .align {
   verticle-align: middle;
+  margin-inline: auto;
+  height: 250px;
 }
